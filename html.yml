@@ -73,14 +73,14 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: html-webserver
+  name: html-server
   labels:
-    app: html-webserver
+    app: html-server
 spec:
   ports:
     - port: 80
       nodePort: 30001
   selector:
-    app: html-webserver
+    app: html-server
     tier: frontend
   type: NodePort
